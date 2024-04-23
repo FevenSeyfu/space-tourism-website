@@ -15,23 +15,28 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/destination"
-         className="hover:underline hover:opacity-[0.5] underline-offset-[39px] h-[57px] decoration-[3px]"
-         activeClassName="text-blue-700 font-bold">
+          <NavLink
+            to="/destination"
+            className="hover:underline hover:opacity-[0.5] underline-offset-[39px] h-[57px] decoration-[3px]"
+          >
             <span className="font-extrabold">01</span> Destination
           </NavLink>
         </li>
         <li>
-          <NavLink to="/crew"
-          className="hover:underline hover:opacity-[0.5] underline-offset-[39px] h-[57px] decoration-[3px]"
-          activeClassName="text-blue-700 font-bold"
-          >02 Crew</NavLink>
+          <NavLink
+            to="/crew"
+            className="hover:underline hover:opacity-[0.5] underline-offset-[39px] h-[57px] decoration-[3px]"
+          >
+           <span className="font-extrabold">02</span> Crew
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/technology"
-          className="hover:underline hover:opacity-[0.5] underline-offset-[39px] h-[57px] decoration-[3px]"
-          activeClassName="text-blue-700 font-bold"
-          >03 Technology</NavLink>
+          <NavLink
+            to="/technology"
+            className="hover:underline hover:opacity-[0.5] underline-offset-[39px] h-[57px] decoration-[3px]"
+          >
+           <span className="font-extrabold">03</span>  Technology
+          </NavLink>
         </li>
       </ul>
     </nav>
