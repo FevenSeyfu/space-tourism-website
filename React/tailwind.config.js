@@ -10,7 +10,10 @@ export default {
       {
         'primary-bg':'#0B0D17',
         'primary-white' : '#D0D6F9',
-        'white' : '#FFFFF',
+      },
+      fontFamily: {
+        bellefair: ["Bellefair", "serif"],
+        barlow: ["Barlow Condensed", "sans-serif"],
       },
     },
   },

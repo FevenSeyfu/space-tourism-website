@@ -1,0 +1,37 @@
+.home-heading {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 172px;
+  color: #ffffff;
+}
+
+.home-text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+
+.CTA-button{
+/* Group */
+
+position: absolute;
+width: 274px;
+height: 274px;
+left: 1001px;
+top: 495px;
+background: #FFFFFF;
+border-radius: 50%;
+text-transform: uppercase;
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+letter-spacing: 2px;
+color: #0B0D17;
+}
