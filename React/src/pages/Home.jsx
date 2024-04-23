@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import '../assets/Style/Home.css'
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleClick = ()=>{
+    navigate("/destination")
+  }
+
   return (
     <div className="bg-[url('/src/assets/home/background-home-desktop.jpg')] bg-no-repeat bg-cover bg-center w-screen h-screen text-white ">
       <main className=" flex flex-row">
@@ -15,7 +21,7 @@ const Home = () => {
           experience!
           </p>
         </article>
-        <button className="CTA-button">Explore</button>
+        <button className="CTA-button" onClick={handleClick}>Explore</button>
       </main>
     </div>
   );

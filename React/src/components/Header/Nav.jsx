@@ -7,7 +7,6 @@ const Nav = () => {
       <ul className="flex flex-row absolute  top-[39px] left-[123px] gap-[48px] font-barlow uppercase tracking-[2.7px] leading-[1] ">
         <li>
           <NavLink
-            exact
             to="/"
             className="hover:underline hover:opacity-[0.5] underline-offset-[39px] decoration-[3px]  h-[57px]"
           >
