@@ -10,6 +10,9 @@ const Layout = ({ children, backgroundImage })=> {
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>
+      <div 
+        className="absolute inset-0 bg-[#0B0D17] opacity-60"
+      />
         <Header />
         {children}
     </div>

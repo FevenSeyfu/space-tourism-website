@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import moonImage from "../assets/destination/image-moon.png";
-import destinationsData from '../../data.json';
+import data from '../../data.json';
 import Layout from "../components/Layout";
 import backgroundImage from '../assets/destination/background-destination-desktop.jpg';
 
@@ -9,8 +9,8 @@ const Destination = () => {
   const [selectedDestination, setSelectedDestination] = useState(null);
 
   useEffect(() => {
-    setDestinations(destinationsData.destinations);
-    setSelectedDestination(destinationsData.destinations[0]);
+    setDestinations(data.destinations);
+    setSelectedDestination(data.destinations[0]);
   }, []);
 
   const handleDestinationClick = (destination) => {
@@ -54,10 +54,10 @@ const Destination = () => {
                     </li>
                   ))}
             </ul>
-            <h1 className="font-bellefair  uppercase font-normal text-white text-[100px] leading-[115px] ">
+            <h2 className="font-bellefair  uppercase font-normal text-white text-[100px] leading-[115px] ">
             {selectedDestination.name}
-            </h1>
-            <p className="h-[128px] w-[444px] font-barlow font-normal text-[#D0D6F9] text-[18px] leading-[32px] text-wrap ">
+            </h2>
+            <p className="h-[128px] w-[444px] font-barlow font-normal text-[#D0D6F9] text-[18px] leading-[32px] text-wrap tracking-widest">
             {selectedDestination.description}
             </p>
             <div className="w-[444px] h-[1px] bg-[#383B4B] mb-[28px]"/>
