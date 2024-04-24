@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import '../assets/Style/Home.css'
+import Layout from "../components/Layout";
+import backgroundImage from '../assets/home/background-home-desktop.jpg';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -9,7 +11,7 @@ const Home = () => {
   }
 
   return (
-    <div className="bg-[url('/src/assets/home/background-home-desktop.jpg')] bg-no-repeat bg-cover bg-center w-screen h-screen text-white ">
+    <Layout backgroundImage={backgroundImage}>
       <main className=" flex flex-row">
         <article className="flex flex-col absolute bottom-[14.56%] left-[165px] w-[480px] h-[382px] gap-[24px]">
           <p className="font-barlow uppercase text-[28px] tracking-[4.72px] text-[#D0D6F9]">So, you want to travel to</p>
@@ -23,7 +25,7 @@ const Home = () => {
         </article>
         <button className="CTA-button" onClick={handleClick}>Explore</button>
       </main>
-    </div>
+    </Layout>
   );
 };
 

@@ -1,12 +1,17 @@
 import React from 'react'
-import { Outlet } from "react-router-dom";
 import Header from './Header/Header';
 
-const Layout = () => {
+const Layout = ({ children, backgroundImage })=> {
   return (
-    <div>
+    <div className="w-screen h-screen text-white" 
+    style={{ 
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
         <Header />
-        <Outlet />
+        {children}
     </div>
   )
 }

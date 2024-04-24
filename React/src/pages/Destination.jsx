@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import moonImage from "../assets/destination/image-moon.png";
 import destinationsData from '../../data.json';
+import Layout from "../components/Layout";
+import backgroundImage from '../assets/destination/background-destination-desktop.jpg';
 
 const Destination = () => {
   const [destinations, setDestinations] = useState([]);
@@ -16,7 +18,7 @@ const Destination = () => {
   };
 
   return (
-    <div className="bg-[url('/src/assets/destination/background-destination-desktop.jpg')] bg-no-repeat bg-cover bg-center w-screen h-screen text-white">
+    <Layout backgroundImage={backgroundImage}>
       <main className="absolute left-[166.5px] top-[212px] flex flex-col font-barlow">
         <h1 className="font-normal text-white uppercase  text-[28px] leading-34 tracking-widest">
           <span className="font-bold opacity-25 mr-[28px]">01</span>
@@ -77,7 +79,7 @@ const Destination = () => {
            )}
         </article>
       </main>
-    </div>
+    </Layout>
   );
 };
 
