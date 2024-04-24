@@ -19,20 +19,20 @@ const Destination = () => {
 
   return (
     <Layout backgroundImage={backgroundImage}>
-      <main className="absolute left-[166.5px] top-[212px] flex flex-col font-barlow">
+      <main className="absolute left-[166.5px] top-[23.55%] flex flex-col font-barlow ">
         <h1 className="font-normal text-white uppercase  text-[28px] leading-34 tracking-widest">
           <span className="font-bold opacity-25 mr-[28px]">01</span>
           Pick your destination
         </h1>
-        <article className="flex flex-row items-center justify-evenly">
+        <article className="flex flex-row items-end justify-evenly h-[472px] mt-[4rem] pb-4">
           <img
             src={moonImage}
             alt="moon Image"
-            className="w-[445px] h-[445px] mt-[97px] ml-[63.5px]"
+            className="w-[27.8rem] h-[27.8rem] ml-[63.5px]"
           />
           {selectedDestination && (
-          <div className="w-[445px] h-[472px] mt-[64px] ml-[157px]">
-            <ul className="flex flex-row w-[285.5px] h-[24px] gap-[35px] font-normal text-[#D0D6F9] text-[16px] leading-[19px] tracking-wider uppercase mb-[37px]">
+          <div className="w-[445px] h-[472px]  ml-[157px] flex flex-col gap-[1rem]">
+            <ul className="flex flex-row w-[285.5px] h-[24px] gap-[35px] font-normal text-[#D0D6F9] text-[16px] leading-[19px] tracking-wider uppercase">
             {destinations.map((destination) => (
                     <li
                       key={destination.name}
@@ -54,10 +54,10 @@ const Destination = () => {
                     </li>
                   ))}
             </ul>
-            <h1 className="font-bellefair  uppercase font-normal text-white text-[100px] leading-[115px] mb-[14px]">
+            <h1 className="font-bellefair  uppercase font-normal text-white text-[100px] leading-[115px] ">
             {selectedDestination.name}
             </h1>
-            <p className="h-[128px] w-[444px] font-barlow font-normal text-[#D0D6F9] text-[18px] leading-[32px] text-wrap mb-[54px]">
+            <p className="h-[128px] w-[444px] font-barlow font-normal text-[#D0D6F9] text-[18px] leading-[32px] text-wrap ">
             {selectedDestination.description}
             </p>
             <div className="w-[444px] h-[1px] bg-[#383B4B] mb-[28px]"/>
