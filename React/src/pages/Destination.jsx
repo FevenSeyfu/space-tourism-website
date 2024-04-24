@@ -34,9 +34,9 @@ const Destination = () => {
             {destinations.map((destination) => (
                     <li
                       key={destination.name}
-                      className={`${
+                      className={`hover:underline underline-offset-[12px] decoration-[3px] hover:text-[#D0D6F9] hover:cursor-pointer hover:opacity-[0.5] ${
                         destination.name === selectedDestination.name
-                          ? "text-white underline underline-offset-[12px] decoration-[3px]"
+                          ? "underline text-white"
                           : ""
                       }`}
                     >
