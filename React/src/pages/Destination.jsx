@@ -19,24 +19,25 @@ const Destination = () => {
 
   return (
     <Layout backgroundImage={backgroundImage}>
-      <main className="absolute left-[166.5px] top-[23.55%] flex flex-col font-barlow ">
-        <h1 className="font-normal text-white uppercase  text-[28px] leading-34 tracking-widest">
-          <span className="font-bold opacity-25 mr-[28px]">01</span>
+      <main className="font-barlow flex flex-col px-6 gap-8 md:px-9 md:top-[136px] md:gap-[60px]
+      lg:gap-4 top-[88px] items-center justify-center md:items-start absolute lg:left-[166.5px] lg:top-[23.55%] text-center lg:text-left w-full">
+        <h1 className="font-normal text-white uppercase text-base md:text-xl lg:text-3xl lg:leading-[4.72px] tracking-wider opacity-100">
+          <span className="font-bold opacity-25 mr-4 lg:mr-7">01</span>
           Pick your destination
         </h1>
-        <article className="flex flex-row items-end justify-evenly h-[472px] mt-[4rem] pb-4">
+        <article className="flex flex-col w-full items-center  gap-6 lg:gap-4 lg:flex-row lg:items-end lg:justify-evenly lg:h-[472px] lg:w-auto lg:mt-[4rem] lg:pb-4">
           <img
             src={moonImage}
             alt="moon Image"
-            className="w-[27.8rem] h-[27.8rem] ml-[63.5px]"
+            className="w-[170px] h-[170px] md:w-[300px] md:h-[300px] lg:w-[27.8rem] lg:h-[27.8rem] lg:ml-[63.5px]"
           />
           {selectedDestination && (
-          <div className="w-[445px] h-[472px]  ml-[157px] flex flex-col gap-[1rem]">
-            <ul className="flex flex-row w-[285.5px] h-[24px] gap-[35px] font-normal text-[#D0D6F9] text-[16px] leading-[19px] tracking-wider uppercase">
+          <div className="flex flex-col md:mx-[60px] lg:w-[444px] lg:ml-[157px] lg:gap-4">
+            <ul className="flex flex-row px-10 md:px-32  lg:p-0 justify-evenly lg:w-[285.5px] lg:h-[24px] lg:gap-[35px] font-normal text-[#D0D6F9] text-sm tracking-[2.36px] md:text-base md:tracking-[2.7px]  uppercase ">
             {destinations.map((destination) => (
                     <li
                       key={destination.name}
-                      className={`hover:underline underline-offset-[12px] decoration-[3px] hover:text-[#D0D6F9] hover:cursor-pointer hover:opacity-[0.5] ${
+                      className={`hover:underline underline-offset-[12px] decoration-[3px] hover:text-[#D0D6F9] hover:cursor-pointer hover:opacity-[0.5] mb-5 md:mb-8 font-barlowCondensed  ${
                         destination.name === selectedDestination.name
                           ? "underline text-white"
                           : ""
@@ -54,23 +55,23 @@ const Destination = () => {
                     </li>
                   ))}
             </ul>
-            <h2 className="font-bellefair  uppercase font-normal text-white text-[100px] leading-[115px] ">
+            <h2 className="font-bellefair  uppercase font-normal text-white text-[56px] md:text-[80px] lg:text-[100px]">
             {selectedDestination.name}
             </h2>
-            <p className="h-[128px] w-[444px] font-barlow font-normal text-[#D0D6F9] text-[18px] leading-[32px] text-wrap tracking-widest">
+            <p className=" font-barlow font-normal text-[#D0D6F9] text-[15px] md:text-base lg:text-lg leading-6 md:leading-7  lg:leading-8 lg:tracking-widest  lg:mx-0 ">
             {selectedDestination.description}
             </p>
-            <div className="w-[444px] h-[1px] bg-[#383B4B] mb-[28px]"/>
-            <div className="flex flex-row gap-[79px] ">
-              <p className="flex flex-col font-normal text-[#D0D6F9] text-[14px] leading-[17px] tracking-wider uppercase">
+            <div className="w-full h-[1px] bg-[#383B4B] my-8 md:mt-12 md:mb-7  lg:mt-[54px] lg:mb-0"/>
+            <div className="flex flex-col gap-8 md:flex-row md:justify-evenly lg:justify-start lg:gap-[79px] font-normal font-barlowCondensed tracking-wider  uppercase">
+              <p className="flex flex-col gap-3  text-[#D0D6F9] text-sm ">
                 Avg. distance
-                <span className="uppercase font-bellefair font-normal text-[28px] text-white leading-[32px] mt-[12px]">
+                <span className="font-bellefair  text-[28px] text-white">
                 {selectedDestination.distance}
                 </span>  
               </p>
-              <p className="flex flex-col font-normal text-[#D0D6F9] text-[14px] leading-[17px] tracking-wider uppercase">
+              <p className="flex flex-col gap-3 text-[#D0D6F9] text-sm">
                 Est. travel time
-                <span className="uppercase font-bellefair font-normal text-[28px] text-white leading-[32px] mt-[12px]">
+                <span className="font-bellefair text-[28px] text-white">
                 {selectedDestination.travel}
                 </span>
               </p>
