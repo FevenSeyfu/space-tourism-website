@@ -7,18 +7,14 @@
   margin: 0;
   padding: 0;
 }
-html, body {
+html,
+body {
   height: 100%;
   overflow: hidden;
 }
 
-.nav-style {
-  width: 830px;
-  height: 96px;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(40.7742px);
-}
-
-.active {
-  @apply underline ;
+@media (min-width: 376px) {
+  .active {
+    @apply underline;
+  }
 }
