@@ -13,8 +13,14 @@ export default {
       },
       fontFamily: {
         bellefair: ["Bellefair", "serif"],
-        barlow: ["Barlow Condensed", "sans-serif"],
+        barlow: ["Barlow", "sans-serif"],
+        barlowCondensed: ["Barlow Condensed", "sans-serif"],
       },
+      ringWidth: {
+        'sm': '48px',
+        'lg': '77px',
+        'lg': '88px',
+      }
     },
   },
   plugins: [],

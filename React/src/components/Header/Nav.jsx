@@ -7,13 +7,13 @@ const Nav = () => {
   return (
     <>
       <nav
-        className="hidden md:flex flex-row items-center justify-center w-[830px]  text-white absolute h-[96px] right-0 z-40 lg:w-[57.638%] md:w-[450px]"
+        className="hidden md:flex flex-row items-center justify-center w-[830px]  text-white absolute h-[96px] right-0 z-40 lg:w-[57.638%] md:w-[450px] md:px-12"
         style={{
           background: "rgba(255, 255, 255, 0.04)",
           backdropFilter: "blur(40.7742px)",
         }}
       >
-        <ul className="flex flex-row lg:gap-[48px] md:gap-9 font-barlow uppercase  leading-[1] lg:text-[16px] lg:tracking-[2.7px] md:text-[14px] md:tracking-[2.36px]">
+        <ul className="flex flex-row lg:gap-[48px] md:gap-9 font-barlow uppercase  leading-[1] lg:text-base lg:tracking-[2.7px] md:text-[14px] md:tracking-wider">
           <li>
             <NavLink
               to="/"
@@ -64,7 +64,7 @@ const Nav = () => {
           backdropFilter: "blur(40.7742px)",
         }}
       >
-        <ul className=" flex flex-col items-start pl-8 pt-28 gap-8 text-white font-barlow uppercase  leading-[1] text-[16px] tracking-[2.7px] ">
+        <ul className=" flex flex-col items-start pl-8 pt-28 gap-8 text-white font-barlow uppercase  leading-[1] text-[16px] tracking-[2.7px] opacity-100 ">
           <li>
             <NavLink
               to="/"
