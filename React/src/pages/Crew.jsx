@@ -4,6 +4,7 @@ import backgroundImageLg from "../assets/crew/background-crew-desktop.jpg";
 import backgroundImageMd from "../assets/crew/background-crew-desktop.jpg";
 import backgroundImageSm from "../assets/crew/background-crew-desktop.jpg";
 import data from "../../data.json";
+import {getImageURL} from "../utils/image-util";
 
 const Crew = () => {
   const [crews, setCrews] = useState([]);
@@ -75,7 +76,7 @@ const Crew = () => {
               </div>
               <div className="border-b-[1px] border-[#383B4B] md:border-0  w-full flex justify-center lg:justify-start">
                 <img
-                  src={`url(${crews[selectedCrewIndex].images.png})`}
+                  src={getImageURL(crews[selectedCrewIndex].images.png)}
                   alt={`${crews[selectedCrewIndex].name}'s image`}
                   className="h-[223px] md:h-[454px] lg:h-auto"
                 />

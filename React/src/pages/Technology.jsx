@@ -4,6 +4,7 @@ import backgroundImageLg from "../assets/technology/background-technology-deskto
 import backgroundImageMd from "../assets/technology/background-technology-tablet.jpg";
 import backgroundImageSm from "../assets/technology/background-technology-mobile.jpg";
 import data from "../../data.json";
+import {getImageURL} from "../utils/image-util";
 
 const Technology = () => {
   const [technologies, setTechnologies] = useState([]);
@@ -84,7 +85,7 @@ const Technology = () => {
                 </div>
               </div>
               <img
-                src={screenSize == 'lg' ?  technologies[selectedTechnologyIndex].images.portrait : technologies[selectedTechnologyIndex].images.landscape}
+                src={screenSize == 'lg' ? getImageURL(technologies[selectedTechnologyIndex].images.portrait ): getImageURL(technologies[selectedTechnologyIndex].images.landscape)}
                 alt={`${technologies[selectedTechnologyIndex].name}'s image`}
                 className="w-screen h-[170px] md:h-[310px] lg:w-[515px] lg:h-[527px]"
               />

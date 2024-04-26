@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import backgroundImageLg from "../assets/destination/background-destination-desktop.jpg";
 import backgroundImageMd from "../assets/destination/background-destination-tablet.jpg";
 import backgroundImageSm from "../assets/destination/background-destination-mobile.jpg";
+import {getImageURL} from "../utils/image-util";
 
 const Destination = () => {
   const [destinations, setDestinations] = useState([]);
@@ -51,7 +52,7 @@ const Destination = () => {
           {destinations[selectedDestinationIndex] && (
             <>
               <img
-                src={destinations[selectedDestinationIndex].images.png}
+                src={getImageURL(destinations[selectedDestinationIndex].images.png)}
                 alt={`${destinations[selectedDestinationIndex].name} Image`}
                 className="w-[170px] h-[170px] md:w-[300px] md:h-[300px] lg:w-[27.8rem] lg:h-[27.8rem] lg:ml-[63.5px]"
               />
