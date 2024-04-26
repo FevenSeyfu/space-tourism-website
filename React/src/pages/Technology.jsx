@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
-import backgroundImageLg from "../assets/technology/background-technology-desktop.jpg";
-import backgroundImageMd from "../assets/technology/background-technology-tablet.jpg";
-import backgroundImageSm from "../assets/technology/background-technology-mobile.jpg";
+import backgroundImageLg from "/assets/technology/background-technology-desktop.jpg";
+import backgroundImageMd from "/assets/technology/background-technology-tablet.jpg";
+import backgroundImageSm from "/assets/technology/background-technology-mobile.jpg";
 import data from "../../data.json";
 
 const Technology = () => {

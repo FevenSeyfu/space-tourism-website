@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
-import backgroundImageLg from "../assets/crew/background-crew-desktop.jpg";
-import backgroundImageMd from "../assets/crew/background-crew-desktop.jpg";
-import backgroundImageSm from "../assets/crew/background-crew-desktop.jpg";
+import backgroundImageLg from "/assets/crew/background-crew-desktop.jpg";
+import backgroundImageMd from "/assets/crew/background-crew-desktop.jpg";
+import backgroundImageSm from "/assets/crew/background-crew-desktop.jpg";
 import data from "../../data.json";
 
 const Crew = () => {

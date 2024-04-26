@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import data from "../../data.json";
 import Layout from "../components/Layout";
-import backgroundImageLg from "../assets/destination/background-destination-desktop.jpg";
-import backgroundImageMd from "../assets/destination/background-destination-tablet.jpg";
-import backgroundImageSm from "../assets/destination/background-destination-mobile.jpg";
+import backgroundImageLg from "/assets/destination/background-destination-desktop.jpg";
+import backgroundImageMd from "/assets/destination/background-destination-tablet.jpg";
+import backgroundImageSm from "/assets/destination/background-destination-mobile.jpg";
 
 const Destination = () => {
   const [destinations, setDestinations] = useState([]);

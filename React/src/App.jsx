@@ -1,7 +1,6 @@
 import './assets/Style/App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
-import Layout from './components/Layout'
 import Destination from './pages/Destination';
 import Technology from './pages/Technology';
 import Crew from './pages/Crew';
