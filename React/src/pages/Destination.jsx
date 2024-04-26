@@ -2,11 +2,33 @@ import React, { useState, useEffect } from "react";
 import moonImage from "../assets/destination/image-moon.png";
 import data from '../../data.json';
 import Layout from "../components/Layout";
-import backgroundImage from '../assets/destination/background-destination-desktop.jpg';
+import backgroundImageLg from '../assets/destination/background-destination-desktop.jpg';
+import backgroundImageMd from '../assets/destination/background-destination-tablet.jpg';
+import backgroundImageSm from '../assets/destination/background-destination-mobile.jpg';
 
 const Destination = () => {
   const [destinations, setDestinations] = useState([]);
   const [selectedDestination, setSelectedDestination] = useState(null);
+  const [backgroundImage, setBackgroundImage] = useState(backgroundImageSm);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 375) {
+        setBackgroundImage(backgroundImageSm);
+      } else if (window.innerWidth <= 1024) {
+        setBackgroundImage(backgroundImageMd);
+      } else {
+        setBackgroundImage(backgroundImageLg);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     setDestinations(data.destinations);

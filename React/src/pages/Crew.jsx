@@ -1,12 +1,38 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
-import backgroundImage from "../assets/crew/background-crew-desktop.jpg";
+import backgroundImageLg from "../assets/crew/background-crew-desktop.jpg";
+import backgroundImageMd from "../assets/crew/background-crew-desktop.jpg";
+import backgroundImageSm from "../assets/crew/background-crew-desktop.jpg";
 import data from "../../data.json";
 
 const Crew = () => {
   const [crews, setCrews] = useState([]);
   const [selectedCrewIndex, setSelectedCrewIndex] = useState(0);
+  const [backgroundImage, setBackgroundImage] = useState(backgroundImageSm);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 375) {
+        setBackgroundImage(backgroundImageSm);
+      } else if (window.innerWidth <= 1024) {
+        setBackgroundImage(backgroundImageMd);
+      } else {
+        setBackgroundImage(backgroundImageLg);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    setDestinations(data.destinations);
+    setSelectedDestination(data.destinations[0]);
+  }, []);
   useEffect(() => {
     setCrews(data.crew);
   }, []);
