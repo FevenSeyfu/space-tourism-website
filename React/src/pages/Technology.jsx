@@ -4,7 +4,7 @@ import backgroundImageLg from "../assets/technology/background-technology-deskto
 import backgroundImageMd from "../assets/technology/background-technology-tablet.jpg";
 import backgroundImageSm from "../assets/technology/background-technology-mobile.jpg";
 import data from "../../data.json";
-import {getImageURL} from "../utils/image-util";
+import getImageURL from "../utils/image-util";
 
 const Technology = () => {
   const [technologies, setTechnologies] = useState([]);

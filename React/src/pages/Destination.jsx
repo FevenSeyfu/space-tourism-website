@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import backgroundImageLg from "../assets/destination/background-destination-desktop.jpg";
 import backgroundImageMd from "../assets/destination/background-destination-tablet.jpg";
 import backgroundImageSm from "../assets/destination/background-destination-mobile.jpg";
-import {getImageURL} from "../utils/image-util";
+import getImageURL from "../utils/image-util";
 
 const Destination = () => {
   const [destinations, setDestinations] = useState([]);

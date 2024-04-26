@@ -4,7 +4,7 @@ import backgroundImageLg from "../assets/crew/background-crew-desktop.jpg";
 import backgroundImageMd from "../assets/crew/background-crew-desktop.jpg";
 import backgroundImageSm from "../assets/crew/background-crew-desktop.jpg";
 import data from "../../data.json";
-import {getImageURL} from "../utils/image-util";
+import getImageURL from "../utils/image-util";
 
 const Crew = () => {
   const [crews, setCrews] = useState([]);
