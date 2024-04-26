@@ -75,7 +75,7 @@ const Crew = () => {
               </div>
               <div className="border-b-[1px] border-[#383B4B] md:border-0  w-full flex justify-center lg:justify-start">
                 <img
-                  src={crews[selectedCrewIndex].images.png}
+                  src={process.env.PUBLIC_URL + crews[selectedCrewIndex].images.png}
                   alt={`${crews[selectedCrewIndex].name}'s image`}
                   className="h-[223px] md:h-[454px] lg:h-auto"
                 />

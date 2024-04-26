@@ -51,7 +51,7 @@ const Destination = () => {
           {destinations[selectedDestinationIndex] && (
             <>
               <img
-                src={destinations[selectedDestinationIndex].images.png}
+                src={process.env.PUBLIC_URL + destinations[selectedDestinationIndex].images.png}
                 alt={`${destinations[selectedDestinationIndex].name} Image`}
                 className="w-[170px] h-[170px] md:w-[300px] md:h-[300px] lg:w-[27.8rem] lg:h-[27.8rem] lg:ml-[63.5px]"
               />

@@ -84,7 +84,7 @@ const Technology = () => {
                 </div>
               </div>
               <img
-                src={screenSize == 'lg' ?  technologies[selectedTechnologyIndex].images.portrait : technologies[selectedTechnologyIndex].images.landscape}
+                src={screenSize == 'lg' ?  process.env.PUBLIC_URL + technologies[selectedTechnologyIndex].images.portrait : process.env.PUBLIC_URL + technologies[selectedTechnologyIndex].images.landscape}
                 alt={`${technologies[selectedTechnologyIndex].name}'s image`}
                 className="w-screen h-[170px] md:h-[310px] lg:w-[515px] lg:h-[527px]"
               />
