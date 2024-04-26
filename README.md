@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/FevenSeyfu/space-tourism-website)
-- Live Site URL: [live site URL]()
+- Solution URL: [solution URL](https://github.com/FevenSeyfu/space-tourism-website/React)
+- Live Site URL: [live site URL](https://space-tourism-feven.netlify.app/)
 
 ## My process
 
