@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
-import backgroundImageLg from "/assets/crew/background-crew-desktop.jpg";
-import backgroundImageMd from "/assets/crew/background-crew-desktop.jpg";
-import backgroundImageSm from "/assets/crew/background-crew-desktop.jpg";
+import backgroundImageLg from "../assets/crew/background-crew-desktop.jpg";
+import backgroundImageMd from "../assets/crew/background-crew-desktop.jpg";
+import backgroundImageSm from "../assets/crew/background-crew-desktop.jpg";
 import data from "../../data.json";
 
 const Crew = () => {
@@ -75,7 +75,7 @@ const Crew = () => {
               </div>
               <div className="border-b-[1px] border-[#383B4B] md:border-0  w-full flex justify-center lg:justify-start">
                 <img
-                  src={process.env.PUBLIC_URL + crews[selectedCrewIndex].images.png}
+                  src={`url(${crews[selectedCrewIndex].images.png})`}
                   alt={`${crews[selectedCrewIndex].name}'s image`}
                   className="h-[223px] md:h-[454px] lg:h-auto"
                 />
