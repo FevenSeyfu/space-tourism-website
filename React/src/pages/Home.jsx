@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Layout from "../components/Layout";
-import backgroundImageSm from "/assets/home/background-home-mobile.jpg";
-import backgroundImageMd from "/assets/home/background-home-tablet.jpg";
-import backgroundImageLg from "/assets/home/background-home-desktop.jpg";
+import backgroundImageSm from "../assets/home/background-home-mobile.jpg";
+import backgroundImageMd from "../assets/home/background-home-tablet.jpg";
+import backgroundImageLg from "../assets/home/background-home-desktop.jpg";
 
 const Home = () => {
   const navigate = useNavigate();
