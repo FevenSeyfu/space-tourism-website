@@ -31,7 +31,6 @@ const Destination = () => {
 
   useEffect(() => {
     setDestinations(data.destinations);
-    setSelectedDestination(data.destinations[0]);
   }, []);
 
   const handleDestinationClick = (index) => {
