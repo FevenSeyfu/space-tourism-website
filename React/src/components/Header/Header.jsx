@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from './Nav'
-import Logo from '../../assets/shared/logo.svg'
+import Logo from '/assets/shared/logo.svg'
 const Header = () => {
   return (
     <header className='absolute h-[96px] w-full lg:top-[40px] lg:w-[96%] md:w-[729px] right-0 flex flex-row items-center justify-between p-6 md:p-0'>

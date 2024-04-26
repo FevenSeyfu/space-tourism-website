@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import IconClose from "../../assets/shared/icon-close.svg";
-import IconHamburger from "../../assets/shared/icon-hamburger.svg";
+import IconClose from "/assets/shared/icon-close.svg";
+import IconHamburger from "/assets/shared/icon-hamburger.svg";
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
