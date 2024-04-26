@@ -30,10 +30,6 @@ const Crew = () => {
   }, []);
 
   useEffect(() => {
-    setDestinations(data.destinations);
-    setSelectedDestination(data.destinations[0]);
-  }, []);
-  useEffect(() => {
     setCrews(data.crew);
   }, []);
 
