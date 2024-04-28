@@ -1,4 +1,4 @@
-![screenshots](https://github.com/FevenSeyfu/space-tourism-website/blob/main/preview.jpg)
+![screenshots](https://github.com/FevenSeyfu/space-tourism-website/blob/main/React/preview.jpg)
 # Frontend Mentor - Space tourism website solution
 
 This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). This challenge is to build out a multi-page space tourism website and get it looking as close to the design as possible.
@@ -35,10 +35,10 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS3
-- Javascript
-- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [TailwindCSS](https://tailwindcss.com/) - For styles
+- [Vite](https://vitejs.dev/) - Build Tool
+
 
 ### What I learned
 while working on this project I had an issue with dynamically rendering images because vite after few tries I have used a util function that correctly passes the relative link to the image...
@@ -82,4 +82,4 @@ as continuous  development
 
 ## Acknowledgments
 
-I have completed this challenge as part of WomenWhocode frontend, on going frontend development #frontendfriday challenge I would like to thank the community for the feedback.
+I have completed this challenge as part of [frontend Queen's](https://www.frontendqueens.com/) on going frontend development #frontendfriday challenge I would like to thank the community for the feedback.
