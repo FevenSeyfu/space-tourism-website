@@ -1,4 +1,4 @@
-![screenshots](https://github.com/FevenSeyfu/space-tourism-website/blob/main/React/preview.jpg)
+![screenshots](https://github.com/FevenSeyfu/space-tourism-website/blob/main/preview.jpg)
 # Frontend Mentor - Space tourism website solution
 
 This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). This challenge is to build out a multi-page space tourism website and get it looking as close to the design as possible.
